@@ -1,0 +1,32 @@
+:root {
+  --bg: #F3F4F6;
+  --text: #111827;
+  --orange: #F97316;
+  --indigo: oklch(51.1% 0.262 276.966);
+}
+
+body.dark {
+  --bg: #070a13;
+  --text: #f1f5f9;
+  --orange: #FB923C;
+  --indigo: oklch(51.1% 0.262 276.966);
+  --green: #4ADE80;
+}
+
+svg {
+  color: var(--text);
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s ease;
+}
+
+a {
+  color: var(--orange);
+}
+
+strong {
+  color: var(--indigo);
+}
