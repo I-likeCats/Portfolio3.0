@@ -1,0 +1,155 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--bg);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+    z-index: 1000;
+}
+
+.header__content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: Playwrite AT;
+}
+
+@media (min-width: 25rem) {
+  .header__content p {
+      font-size: 2rem;
+  }
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 85rem;
+}
+
+.header__content__nav {
+  display: none;
+}
+
+.header__content__menubutton svg {
+  color: var(--text);
+  height: 3rem;
+  width: 3rem;
+}
+
+
+/* xs */
+
+/* @media (min-width: 20rem) {
+  } */
+  
+  /* s */
+  
+@media (min-width: 45rem) {
+  .header__content__menubutton {
+    display: none;
+  }
+  
+  .header__content__nav {
+    display: flex;
+    font-size: 1.3rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+  }
+  
+  .header__content__nav__a {
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .header__content__nav__a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+  }
+  
+  
+  .header__content__spacer {
+    height: 1.5rem;
+    border-left: 0.125rem solid var(--text);
+  }
+  
+  .darkmode-icon {
+    display: none;
+  }
+  
+  body.dark .lightmode-icon {
+    display: none;
+  }
+  
+  body.dark .darkmode-icon {
+    display: block;
+  }
+}
+
+/* l */
+
+/* @media (min-width: 64rem) {
+} */
+
+/* xl */
+
+/* @media (min-width: 85rem) {
+} */
+/* header mobile */
+
+.mobile-header {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 3.5rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-150%);
+  transition: 0.3s ease;
+}
+
+.mobile-header.active {
+  transform: translateY(0);
+}
+
+.mobile-header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  font-size: 2rem;
+
+  flex-direction: column;
+}
+
+.mobile-header__nav svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.mobile-header__darkmode-icon {
+  display: none;
+}
+
+body.dark .mobile-header__lightmode-icon {
+  display: none;
+}
+
+body.dark .mobile-header__darkmode-icon {
+  display: block;
+}
