@@ -108,7 +108,7 @@
 /* header mobile */
 
 .mobile-header {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
@@ -151,14 +151,17 @@
   height: 3rem;
 }
 
-.mobile-header__darkmode-icon {
+.mobile-header__darkmode-icon,
+.darkmode-icon {
   display: none;
 }
 
-body.dark .mobile-header__lightmode-icon {
+body.dark .mobile-header__lightmode-icon,
+body.dark .lightmode-icon {
   display: none;
 }
 
-body.dark .mobile-header__darkmode-icon {
+body.dark .mobile-header__darkmode-icon,
+body.dark .darkmode-icon {
   display: block;
 }
