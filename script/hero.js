@@ -26,11 +26,7 @@ const writeLoop = async () => {
 
     await sleep(sleepTime * 5);
 
-    if (curPhraseIndex === phrases.length - 1) {
-      curPhraseIndex = 0;
-    } else {
-      curPhraseIndex++;
-    }
+    curPhraseIndex = (curPhraseIndex + 1) % phrases.length;
   }
 };
 
