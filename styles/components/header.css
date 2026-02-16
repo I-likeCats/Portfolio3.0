@@ -137,6 +137,12 @@
   flex-direction: column;
 }
 
+.mobile-header__nav__a {
+    color: var(--orange);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
 .mobile-header__nav svg {
   width: 3rem;
   height: 3rem;
