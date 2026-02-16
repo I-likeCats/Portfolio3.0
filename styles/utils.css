@@ -80,6 +80,14 @@ button {
   .container {
     width: 45rem;
   }
+
+  h1.xl {
+    font-size: 4rem;
+  }
+
+  h2.xl {
+    font-size: 2rem;
+  }
 }
 
 /* l */
@@ -87,6 +95,14 @@ button {
 @media (min-width: 64rem) {
   .container {
     width: 64rem;
+  }
+
+ h1.xl {
+    font-size: 5rem;
+  }
+
+  h2.xl {
+    font-size: 2.5rem;
   }
 }
 
