@@ -1,0 +1,63 @@
+/* Cursor Animation */
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+
+.hero {
+  margin-top: 2rem;
+}
+
+.hero__title {
+  margin-top: 1rem;
+}
+
+.hero__typewriter {
+  font-family: Arial;
+  font-weight: 700;
+}
+
+.hero__typewriter,
+.hero__cursor {
+  color: var(--green);
+}
+
+.hero__cursor {
+  font-size: 2.5rem;
+  animation: blink 0.875s linear infinite;
+}
+
+/* xs */
+
+/* @media (min-width: 20rem) {
+} */
+
+/* s */
+
+@media (min-width: 45rem) {
+  .hero__cursor {
+    font-size: 4.5rem;
+  }
+}
+
+/* l */
+
+@media (min-width: 64rem) {
+  .hero__cursor {
+    font-size: 5.5rem;
+  }
+}
+
+/* xl */
+
+/* @media (min-width: 85rem) {
+} */
