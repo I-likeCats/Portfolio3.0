@@ -18,9 +18,9 @@
 /* @media (min-width: 85rem) {
 } */
 
-* {
+/* * {
   line-height: calc(1em + 0.5rem);
-}
+} */
 
 * {
     margin: 0;
@@ -51,7 +51,7 @@ button {
   padding: 0;
   border: none;
   background: none;
-  cursor: pointer,
+  cursor: pointer;
 }
 
 .container {
@@ -63,7 +63,7 @@ button {
 }
 
 .section {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 /* xs */
@@ -72,9 +72,21 @@ button {
   .container {
     width: 20rem;
   }
+
+  .section h1{
+    font-size: 1.5rem;
+  }
 }
 
 /* s */
+
+@media (min-width: 36rem) {
+  .container {
+    width: 36rem;
+  }
+}
+
+/* m */
 
 @media (min-width: 45rem) {
   .container {
