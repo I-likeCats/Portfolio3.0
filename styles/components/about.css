@@ -19,22 +19,25 @@
   font-size: 1.25rem;
 }
 
-/* s */
-
-@media (min-width: 45rem) {
-  /* Layout */
-
 .about__content__img {
   aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: 85% 30%;
-  height: 29.75rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
 }
+/* s */
+
+@media (min-width: 45rem) {
+  .about__content__img {
+    height: 29.75rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  /* Layout */
+
 
 .about__content {
   display: flex;
