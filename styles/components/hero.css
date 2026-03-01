@@ -19,10 +19,10 @@
 
 .hero__title {
   margin-top: 0.5rem;
+  line-height: 2.2rem;
 }
 
 .hero__typewriter {
-  font-family: Arial;
   font-weight: 700;
 }
 
@@ -36,6 +36,10 @@
   animation: blink 0.875s linear infinite;
 }
 
+.hero p {
+  margin-top: 0.5rem;
+}
+
 /* xs */
 
 /* @media (min-width: 20rem) {
@@ -46,6 +50,10 @@
 @media (min-width: 45rem) {
   .hero__cursor {
     font-size: 4.5rem;
+  }
+
+  .hero__title {
+      line-height: 4.2rem;
   }
 }
 
