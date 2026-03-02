@@ -37,7 +37,7 @@
 .projects__1__techstack,
 .projects__2__techstack,
 .projects__3__techstack {
-  backdrop-filter: blur(5px);
+  background-color: var(--bg);
   border: 0.125rem solid grey;
   border-radius: 7px;
   padding-left: 0.25rem;
@@ -55,13 +55,10 @@
   width: 1rem;
 }
 
-.projects__1__techstack p {
-  color: #f1f5f9;
-}
-
+.projects__1__techstack p,
 .projects__2__techstack p,
 .projects__3__techstack p {
-  color: #111827;
+  color: var(--text);
 }
 
 .projects__2,
