@@ -1,0 +1,105 @@
+.github-icon {
+  height:40px;
+}
+
+.email-icon {
+  height:40px;
+  width: 40px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.contact-email,
+.contact-github {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-email,
+.contact-github {
+  margin-top: 2rem;
+}
+
+/* s */
+
+@media (min-width: 36rem) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.contact-info-email {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip {
+  color: var(--text);
+  font-family: Roboto, Arial;
+  background-color: var(--bg);
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(79, 79, 79);
+  border-width: 0.125rem;
+  padding: 0.2rem;
+  font-size: 0.75rem;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+  opacity: 0;
+  transition: opacity 0.15s linear;
+  pointer-events: none;
+}
+
+.contact-info-email:hover .tooltip{
+  opacity: 1;
+}
+
+.github-icon.light,
+.email-icon.light {
+  display: none;
+}
+
+body.dark .github-icon.light,
+body.dark .email-icon.light{
+  display: block;
+}
+
+body.dark .github-icon.dark,
+body.dark .email-icon.dark{
+  display: none;
+}
+
+.contact-container .contact-github h3 {
+  margin-top: 0.75rem;
+}
+
+/* m */
+
+@media (min-width: 45rem) {
+  .github-icon {
+    height: 5rem;
+  }
+
+  .email-icon {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+/* l */
+
+@media (min-width: 64rem) {
+  .contact-container {
+    height: 20rem;
+  }
+}

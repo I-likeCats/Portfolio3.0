@@ -38,10 +38,9 @@
 .projects__2__techstack,
 .projects__3__techstack {
   background-color: var(--bg);
-  border: 0.125rem solid grey;
+  /* border: 0.125rem solid grey; */
   border-radius: 7px;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding: 0.25rem 0.4rem;
 
   display: flex;
   align-items: center;

@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./styles/components/hero.css">
   <link rel="stylesheet" href="./styles/components/about.css">
   <link rel="stylesheet" href="./styles/components/projects.css">
+  <link rel="stylesheet" href="./styles/components/contact.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
@@ -75,7 +76,7 @@
         <div class="about__content__text">
           <div class="about__content__text__p">
             <p class="about__content__text__p1">Hello, my name is Quan. I am a <strong>15yrs old</strong>, about to be <strong>Frontend Web Developer</strong> based in <strong>Munich</strong>. I also like animating and editing Videos and have a Youtube channel. My websites are mostly CSS-focused and I avoid overusing Javascript.</p>
-            <p class="about__content__text__p2">Currently, I take on the title of <strong>Lead Designer & Advertising Manager</strong> at RaelStudios. But outside of that I love playing Minecraft and Valorant.</p>
+            <p class="about__content__text__p2">Currently, I take on the title of <strong>Senior Designer & Advertising Manager</strong> at RaelStudios. But outside of that I love playing Minecraft and Valorant.</p>
           </div>
           <div class="about__content__text__skills">
             <div class="about__content__text__skills__div">
@@ -231,9 +232,9 @@
               </p>
             </div>
           </div>
-          <a href="https://i-likecats.github.io/My-Portfolio/" target="_blank">
+          <a href="https://github.com/I-likeCats/FAQ-Template" target="_blank">
             <div class="img-wrapper">
-              <img src="./img/Screenshot 2026-03-02 175504.png" alt="Img of a dark-/lightmode switch" class="projects__3__img">
+              <img src="./img/Screenshot 2026-03-02 182445.png" alt="Img of a accordion component" class="projects__3__img">
             </div>
           </a>
         </div>
@@ -242,7 +243,27 @@
 
     <section class="container section contact">
       <h1 id="contact">Contact me</h1>
+      <div class="contact-container">
+        <div class="contact-email">
+          <img draggable="false" src="./svg/black-mail.svg" class="email-icon dark">
+          <img draggable="false" src="./svg/white-mail.svg" class="email-icon light">
+          <h3>Email</h3>
+          <div class="contact-info-email" id="email"
+            data-email="quanhpublic@gmail.com">
+            quanhpublic@gmail.com
+            <div class="tooltip">copy to clipboard</div>
+          </div>
+        </div>
+        <div class="contact-github">
+          <img draggable="false" src="./svg/githubwhite.svg" class="github-icon light">
+          <img draggable="false" src="./svg/githubblack.svg" class="github-icon dark">
+          <h3>Github</h3>
+          <a href="https://github.com/I-likeCats" class="contact-info-github" target="_blank">I-likeCats</a>
+        </div>  
+      </div>
     </section>
+
+    <section class="container section faq"></section>
   </main>
 
 <!--   <footer class="footer container">
@@ -250,5 +271,6 @@
   </footer> -->
   <script src="./script/header.js"></script>
   <script src="./script/hero.js"></script>
+  <script src="./script/contact.js"></script>
 </body>
 </html>
