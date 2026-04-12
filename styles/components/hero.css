@@ -69,3 +69,7 @@
 
 /* @media (min-width: 85rem) {
 } */
+
+.homeBtn-a {
+  text-decoration: none;
+}
