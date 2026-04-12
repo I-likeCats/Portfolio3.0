@@ -21,16 +21,18 @@
   <link rel="stylesheet" href="./styles/components/about.css">
   <link rel="stylesheet" href="./styles/components/projects.css">
   <link rel="stylesheet" href="./styles/components/contact.css">
+  <link rel="stylesheet" href="./styles/components/faq.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="./svg/favicon.ico">
 </head>
 
 <body class="dark">
   <!--header-->
   <header class="header">
     <div class="header__content">
-      <p><em>Quan's Portfolio</em></p>
+      <a href="#home" class="homeBtn-a"><p id="homeBtn"><em>Quan's Portfolio</em></p></a>
       <nav class="header__content__nav">
         <a href="#about" class="header__content__nav__a">About</a>
         <a href="#Projects" class="header__content__nav__a">Projects</a>
@@ -60,7 +62,7 @@
 
   <!--main-->
   <main>
-    <section class="hero container">
+    <section id="home" class="hero container">
       <h2 class="hero__subtitle xl">
         Hi, I'm Quan 👋
       </h2>
